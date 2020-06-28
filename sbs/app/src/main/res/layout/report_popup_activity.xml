@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="신고"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="#EE0000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <!-- //end 타이틀바 -->
+
+    <!-- Notice -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton1_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 내용과 관련없는 이미지"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:buttonTint="#EE0000"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 잘못된 내용"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:buttonTint="#EE0000"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 칵테일과 관련없는 게시물"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:buttonTint="#EE0000"/>
+
+            <RadioButton
+                android:id="@+id/radioButton4_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 기타"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:buttonTint="#EE0000"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_report_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:hint="30자 이내로 신고내용을 적어주세요"
+            android:textColorHint="#33EE0000"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="확인"
+            android:textSize="15sp"
+            android:textColor="#EE0000"
+            android:padding="16dp"
+            android:background="#00000000"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="reportPopupConfirm"/>
+
+        <View
+            android:background="#66bdbdbd"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:text="취소"
+            android:textSize="15sp"
+            android:textColor="#EE0000"
+            android:padding="16dp"
+            android:background="#00000000"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="reportPopupCancel"/>
+    </LinearLayout>
+</LinearLayout>

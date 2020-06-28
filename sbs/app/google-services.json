@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "941323780021",
+    "firebase_url": "https://sbsimulator-96f70.firebaseio.com",
+    "project_id": "sbsimulator-96f70",
+    "storage_bucket": "sbsimulator-96f70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941323780021:android:4057f96e66d5ecd5c563fc",
+        "android_client_info": {
+          "package_name": "org.techtown.capstoneprojectcocktail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941323780021-l6u1fuq7pri6bvbo33t4cis3igmah6n0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.capstoneprojectcocktail",
+            "certificate_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+          }
+        },
+        {
+          "client_id": "941323780021-pvjec5m3qvolmup2s5d13kdq8fqrdfft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkmiq4SOi9U4WXZe1ECM_R45TbiBcY_3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941323780021-pvjec5m3qvolmup2s5d13kdq8fqrdfft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

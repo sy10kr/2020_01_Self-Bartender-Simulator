@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        app:cardBackgroundColor="#333333"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:id="@+id/text_ingredient_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#DDEFEF"
+            android:maxLines="1"
+            android:layout_marginHorizontal="15dp"
+            android:text="재료이름"
+            android:background="#00000000"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

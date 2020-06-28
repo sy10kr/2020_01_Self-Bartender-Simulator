@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myPageConsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#171717"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageView_myPage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:maxHeight="130dp"
+            android:maxWidth="130dp"
+            android:contentDescription="@string/nav_header_desc"
+            android:padding="@dimen/nav_header_vertical_spacing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_header_title"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:paddingHorizontal="@dimen/nav_header_vertical_spacing"
+            app:layout_constraintBottom_toTopOf="@+id/userNameText_myPage"
+            app:layout_constraintLeft_toRightOf="@+id/profileImageView_myPage" />
+
+        <TextView
+            android:id="@+id/userNameText_myPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/nav_header_vertical_spacing"
+            android:text="@string/nav_header_subtitle"
+            android:typeface="serif"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/profileImageView_myPage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myPageConsLayout"
+        android:background="#333333">
+
+        <Button
+            android:id="@+id/button_bookmark_myPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/button_shape"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="Bookmark"
+            android:typeface="serif"
+            android:textAllCaps="false"
+            android:textColor="#DDEFEF"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/button_comment_myPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button_shape"
+            android:text="My Comment"
+            android:typeface="serif"
+            android:textAllCaps="false"
+            android:textColor="#DDEFEF"
+            android:padding="15dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/button_grading_myPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button_shape"
+            android:text="My Grading"
+            android:typeface="serif"
+            android:textAllCaps="false"
+            android:textColor="#DDEFEF"
+            android:padding="15dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/button_uploaded_recipe_myPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button_shape"
+            android:text="My Recipe"
+            android:typeface="serif"
+            android:textAllCaps="false"
+            android:textColor="#DDEFEF"
+            android:padding="15dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/button_upload_myPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button_shape"
+            android:text="Recipe Upload"
+            android:typeface="serif"
+            android:textAllCaps="false"
+            android:textColor="#DDEFEF"
+            android:padding="15dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.techtown.capstoneprojectcocktail">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="org.techtown.capstoneprojectcocktail"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CocktailRecipeActivity"
+            android:label="  Information"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".GradingPopupActivity"
+            android:label="  Grading"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity
+            android:name=".ReportPopupActivity"
+            android:label="  Report"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity
+            android:name=".TasteInfoPopupActivity"
+            android:label="  Taste"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity
+            android:name=".CocktailSearchActivity"
+            android:label="  Search"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MyPageBookmarkActivity"
+            android:label="  Bookmark"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MyPageCommentActivity"
+            android:label="  My Comment"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MyPageGradingActivity"
+            android:label="  My Grading"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MyPageMyRecipeActivity"
+            android:label="  My Recipe"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".CocktailUploadActivity"
+            android:label="  Recipe Upload"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 삭제 필수 테스트용 액티비티 -->
+        <activity
+            android:name=".TestForCosine"
+            android:label="  Test"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MJH_SimulatorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MJH_SimulatorUiActivity"
+            android:label="  Simulation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MJH_PopupActivity"
+            android:label="aa1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name=".MJH_Popup1Activity"
+            android:label="aa2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name=".MJH_Popup2Activity"
+            android:label="aa2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name=".MJH_Popup3Activity"
+            android:label="aa2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name=".MJH_Popup4Activity"
+            android:label="aa2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name=".MJH_SimulatorGraphicActivity"
+            android:label="  Simulation Result"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MJH_SimulatorGraphicMartiniActivity"
+            android:label="  Simulation Result"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MJH_CustomView"
+            android:label="aa2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+</manifest>
+

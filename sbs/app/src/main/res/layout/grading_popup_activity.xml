@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#333333"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="나의 평가"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="#171717"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <!-- //end 타이틀바 -->
+
+    <!-- Notice -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp">
+        <RatingBar
+            android:id="@+id/ratingBar_grading_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator = "false"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_gravity="center_horizontal"
+            style="@style/Widget.AppCompat.RatingBar"/>
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="확인"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:padding="16dp"
+            android:background="#171717"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="gradingPopupConfirm"/>
+
+        <View
+            android:background="#66bdbdbd"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:text="취소"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:padding="16dp"
+            android:background="#171717"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="gradingPopupCancel"/>
+    </LinearLayout>
+</LinearLayout>

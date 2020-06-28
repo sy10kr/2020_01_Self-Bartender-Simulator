@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonForTest1_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="케이스: 골든 드림" />
+
+    <Button
+        android:id="@+id/buttonForTest2_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="케이스: 롱 아일랜드 아이스티" />
+
+    <Button
+        android:id="@+id/buttonForTest3_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="케이스: 다이키리" />
+</LinearLayout>

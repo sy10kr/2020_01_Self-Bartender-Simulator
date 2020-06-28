@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#535353">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageView_cocktail_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <Button
+                android:id="@+id/button_takePicture_cocktail_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="칵테일 사진 촬영"
+                android:background="@drawable/button_shape"
+                android:textSize="20sp"
+                android:textColor="#DDEFEF"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:paddingHorizontal="30dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id ="@+id/textInputLayout_cocktailName_cocktail_upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="칵테일 이름"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:textColor="#DDEFEF"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id ="@+id/textInputLayout_cocktailHowToMake_cocktail_upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="재료상세 및 조주과정"
+                    android:textSize="14sp"
+                    android:textColor="#DDEFEF"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id ="@+id/textInputLayout_cocktailDescription_cocktail_upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="설명"
+                    android:textSize="14sp"
+                    android:textColor="#DDEFEF"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_upload_cocktail_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="업로드"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:textColor="#DDEFEF"
+                    android:singleLine="true"/>
+
+                <Button
+                    android:id="@+id/button_cancel_cocktail_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="취소"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:textColor="#DDEFEF"
+                    android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

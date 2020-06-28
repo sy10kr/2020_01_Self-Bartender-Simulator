@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#171717"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="테크닉을 골라주세요."
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#171717">
+
+            <Button
+                android:id="@+id/buttonBuild"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mBuild"
+                android:text="Build"
+                android:background="#424242"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/buttonStir"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mStir"
+                android:text="Stir"
+                android:background="#424242"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonShake"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mShake"
+                android:text="Shake"
+                android:background="#424242"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/buttonLayering"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mLayering"
+                android:text="Layering"
+                android:background="#424242"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonGradient"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mGradient"
+                android:text="Gradient"
+                android:background="#424242"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/buttonBlend"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mBlend"
+                android:text="Blend"
+                android:background="#424242"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonPour"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mPour"
+                android:text="Pour"
+                android:background="#424242"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/buttonRolling"
+                android:layout_width="148dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:onClick="mRolling"
+                android:text="Rolling"
+                android:background="#424242"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:gravity="center"
+                android:onClick="mNext"
+                android:padding="16dp"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonClose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:onClick="mClose"
+        android:src="@mipmap/circle_close" />
+
+
+</FrameLayout>

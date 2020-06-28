@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MJH_SimulatorActivity">
+
+    <Button
+        android:id="@+id/button1_mjh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button2_mjh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/button3_mjh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/home_background" />
+
+    <!--
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="253dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.47">
+    </FrameLayout>
+    -->
+
+
+</LinearLayout>

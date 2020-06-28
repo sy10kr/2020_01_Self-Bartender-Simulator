@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#333333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_cocktail_recipe">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_info_for_nonLoginUser_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="로그인을 하시면\n북마크, 평가, 신고, 댓글기능을\n이용하실수 있습니다!"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                android:textColor="#c90000"/>
+
+            <ImageView
+                android:id="@+id/imageView_cocktail_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/cocktail_sample_image" />
+
+            <TextView
+                android:id="@+id/textView_cocktailName_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="1dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:text="맛있는 칵테일의 이름"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#DDEFEF"/>
+
+            <TextView
+                android:id="@+id/textView_cocktailDescription_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="10dp"
+                android:gravity="left|center_vertical"
+                android:text="맛있는 칵테일의 설명"
+                android:textSize="17sp"
+                android:textColor="#DDEFEF"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#404040"/>
+
+            <TextView
+                android:id="@+id/textView_ingredientText_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="1dp"
+                android:gravity="left|center_vertical"
+                android:text="재료"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#DDEFEF"/>
+            <TextView
+                android:id="@+id/textView_cocktailIngredient_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="10dp"
+                android:gravity="left"
+                android:text="Whisky0"
+                android:textSize="17sp"
+                android:textColor="#DDEFEF"/>
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#404040"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_ABVText_recipe"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="ABV"
+                    android:textColor="#ffc800"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView_cocktailABV_recipe"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="10%"
+                    android:textColor="#ffc800"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#404040"/>
+
+            <TextView
+                android:id="@+id/textView_simpleRating_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="1dp"
+                android:gravity="left|center_vertical"
+                android:text="전체 평가"
+                android:textColor="#DDEFEF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:theme="@style/RatingBar"
+                android:id="@+id/ratingBar_grading_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator = "true"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                android:layout_gravity="center_horizontal"
+                style="@style/Widget.AppCompat.RatingBar"/>
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#404040"/>
+            <TextView
+                android:id="@+id/textView_simpleCommentText_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="1dp"
+                android:gravity="left|center_vertical"
+                android:text="댓글"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#DDEFEF"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewForComment_recipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_bookmark_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:visibility="invisible"
+        app:fabSize="normal"
+        app:srcCompat="@mipmap/outline_bookmark_border_white_36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_grade_recipe"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_grade_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:visibility="invisible"
+        app:fabSize="normal"
+        app:srcCompat="@mipmap/outline_star_half_white_36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_report_recipe"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_report_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:visibility="invisible"
+        app:backgroundTint="#EE0000"
+        app:srcCompat="@mipmap/outline_feedback_white_36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_animation_recipe"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_animation_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="20dp"
+        app:backgroundTint="#701919"
+        app:srcCompat="@mipmap/outline_more_vert_white_36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_cocktail_recipe"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_cocktail_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#adadad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id ="@+id/textInputLayout_comment_recipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            app:errorEnabled="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="댓글"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton_comment_recipe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="#737373"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/outline_chat_white_36dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

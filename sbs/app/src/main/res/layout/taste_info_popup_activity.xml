@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#171717"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="칵테일 맛 정보"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="유사한 칵테일"
+                android:background="#424242"
+                android:layout_marginTop="1dp"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="5dp"/>
+            <TextView
+                android:id="@+id/textView_taste_info_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="1순위:"
+                android:background="#424242"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textView_taste_info_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="2순위:"
+                android:background="#424242"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textView_taste_info_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="3순위:"
+                android:background="#424242"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예측되는 맛"
+                android:background="#424242"
+                android:layout_marginTop="1dp"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="5dp"/>
+
+            <TextView
+                android:id="@+id/textView_taste_taste_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="예측되는 맛 없음"
+                android:background="#424242"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:lineSpacingExtra="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예측되는 향"
+                android:layout_marginTop="1dp"
+                android:background="#424242"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="5dp"/>
+
+            <TextView
+                android:id="@+id/textView_flavor_taste_info_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="1순위:"
+                android:background="#424242"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textView_flavor_taste_info_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="2순위:"
+                android:background="#424242"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/textView_flavor_taste_info_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="3순위:"
+                android:background="#424242"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCheck_taste_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:onClick="tasteInfoPopupCancel"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonClose_taste_info"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:onClick="tastePopupClose"
+        android:src="@mipmap/circle_close" />
+</FrameLayout>
